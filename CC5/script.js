@@ -3,8 +3,7 @@
 // They compete against each other three times
 // Calculate the average for each team
 // Compare the average to determine the winner of the competition.
-// The result can also be a draw 
-
+// The result can also be a draw
 
 // Operations
 const resDolp_1 = 97
@@ -22,14 +21,13 @@ let averageKoal = (resKoalas_1 + resKoalas_2 + resKoalas_3) / 3
 // console.log(averageKoal)
 
 if(averageDol > averageKoal && ((resDolp_1 > 100) || (resDolp_2 > 100) || (resDolp_3 > 100))) {
-    const message = `Dolphins (${averageDol}) are the winners of the season against Koalas (${averageKoal}).`; 
+    const message = `Dolphins (${averageDol}) are the winners of the season against Koalas (${averageKoal}).`;
     console.log(message);
 
 } else if (averageDol === averageKoal){
-    const message = `There is a draw between Dolphins (${averageDol}) and the Koalas (${averageKoal}).`; 
+    const message = `There is a draw between Dolphins (${averageDol}) and the Koalas (${averageKoal}).`;
     console.log(message);
 } else if (averageKoal > averageDol && ((resKoalas_1 > 100) || (resKoalas_2 > 100) || (resKoalas_3 > 100))){
-        const message = `Koalas (${averageKoal}) are the winners the season against Dolphins (${averageDol}).`; 
+        const message = `Koalas (${averageKoal}) are the winners the season against Dolphins (${averageDol}).`;
         console.log(message);
     }
-
